@@ -1,3 +1,5 @@
+<br />
+<b>Warning</b>:  Invalid argument supplied for foreach() in <b>/var/www/fusionpbx/app/edit/file_read.php</b> on line <b>86</b><br />
 <?php
 
 	//application details
@@ -76,6 +78,7 @@
 		$z++;
 		$apps[$x]['db'][$y]['fields'][$z]['name'] = "app_name";
 		$apps[$x]['db'][$y]['fields'][$z]['type'] = "text";
+		$apps[$x]['db'][$y]['fields'][$z]['search'] = 'true';
 		$apps[$x]['db'][$y]['fields'][$z]['description']['en-us'] = "Application name.";
 		$z++;
 		$apps[$x]['db'][$y]['fields'][$z]['name'] = "app_uuid";
@@ -86,18 +89,22 @@
 		$z++;
 		$apps[$x]['db'][$y]['fields'][$z]['name'] = "transaction_code";
 		$apps[$x]['db'][$y]['fields'][$z]['type'] = "text";
+		$apps[$x]['db'][$y]['fields'][$z]['search'] = 'true';
 		$apps[$x]['db'][$y]['fields'][$z]['description']['en-us'] = "Transaction code.";
 		$z++;
 		$apps[$x]['db'][$y]['fields'][$z]['name'] = "transaction_address";
 		$apps[$x]['db'][$y]['fields'][$z]['type'] = "text";
+		$apps[$x]['db'][$y]['fields'][$z]['search'] = 'true';
 		$apps[$x]['db'][$y]['fields'][$z]['description']['en-us'] = "IP address of the user.";
 		$z++;
 		$apps[$x]['db'][$y]['fields'][$z]['name'] = "transaction_type";
 		$apps[$x]['db'][$y]['fields'][$z]['type'] = "text";
+		$apps[$x]['db'][$y]['fields'][$z]['search'] = 'true';
 		$apps[$x]['db'][$y]['fields'][$z]['description']['en-us'] = "Type: add, update, delete, select";
 		$z++;
 		$apps[$x]['db'][$y]['fields'][$z]['name'] = "transaction_date";
 		$apps[$x]['db'][$y]['fields'][$z]['type'] = "timestamp";
+		$apps[$x]['db'][$y]['fields'][$z]['search'] = 'true';
 		$apps[$x]['db'][$y]['fields'][$z]['description']['en-us'] = "Transaction date.";
 		$z++;
 		$apps[$x]['db'][$y]['fields'][$z]['name'] = "transaction_old";
